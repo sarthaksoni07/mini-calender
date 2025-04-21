@@ -55,9 +55,9 @@ You can easily modify this calendar by:
 
 <div align = "center">
  <h3>Thank you for contributing to our repository.😃</h3>
-<a href="https://github.com/sarthaksoni07/mini-calender.git/graphs/contributors">
-  <img src="https://github.com/sarthaksoni07/mini-calender.git" />
+<a href="https://github.com/sarthaksoni07/mini-calender/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sarthaksoni07/mini-calender" />
 </a>
 <div>
+Made with ❤️ and pure HTML/CSS.
 
-Made with ❤️ and pure HTML/CSS
