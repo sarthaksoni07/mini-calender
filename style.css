@@ -15,7 +15,7 @@
   margin: 20px auto;
   justify-content: center;
   text-align: center;
-
+    
   /* 🧊 Frosted glass look */
   background: rgba(241, 215, 234, 0.15);
   backdrop-filter: blur(15px);
@@ -134,6 +134,8 @@ body {
   z-index: 100;
   font-size: 14px;
   pointer-events: none;
+  font-weight: 500;
+  font-size: large;
 }
 
 /* Show tooltip on td:hover */
@@ -141,3 +143,4 @@ td:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
+

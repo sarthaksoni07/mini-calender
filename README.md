@@ -51,22 +51,13 @@ You can easily modify this calendar by:
 - Adding more events with tooltips
 - Replacing the font with another of your choice
 
-## Browser Compatibility
+## Our Contributors
 
-This project uses modern CSS features like:
-- `backdrop-filter`
-- CSS transitions and transforms
-- CSS gradients
-
-For best results, use recent versions of Chrome, Firefox, Safari, or Edge.
-
-
-
-## Acknowledgements
-
-- Font: "Wasted-Vindey" 
-- Inspiration: Glass morphism design trend
-
----
+<div align = "center">
+ <h3>Thank you for contributing to our repository.😃</h3>
+<a href="https://github.com/sarthaksoni07/mini-calender.git/graphs/contributors">
+  <img src="https://github.com/sarthaksoni07/mini-calender.git" />
+</a>
+<div>
 
 Made with ❤️ and pure HTML/CSS
