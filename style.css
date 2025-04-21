@@ -2,3 +2,55 @@
     text-align: center
 };
 
+#table {
+    width: 100%; /* Increase the width to make the table larger */
+    border-radius: 14px;
+    margin:0 auto;
+    table-layout: fixed;
+
+}
+#table td:hover {
+    background-color: #e5edf3;         /* Light blue on hover */
+    color:rgb(157, 156, 241);                       /* White text */
+    cursor: pointer;                   /* Pointer cursor on hover */
+    transition: all 0.2s ease-in-out;  /* Smooth animation */
+    border-radius: 10px;               /* Rounded corners */
+  }
+  
+html,body{
+    background-image: linear-gradient(120deg,rgb(209, 240, 255),rgb(100, 192, 235),rgb(247, 209, 240));
+    height: 100%;
+}
+th,td{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+th,td,table{
+    border: solid 1px black;
+    border-collapse: collapse;
+
+}
+h1 {
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+   font-size: 80px;
+    background-color: rgb(166, 207, 241); /* White with 50% transparency */
+}
+body {
+    @font-face {
+        font-family: wast;
+        src: url(waste);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the screen */
+    margin: 0;
+}
+  .container{
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+  }
