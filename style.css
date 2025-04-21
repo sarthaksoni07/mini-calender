@@ -7,6 +7,7 @@
   justify-content: center;
 }
 #table {
+  font-family: "Wasted-Vindey";
   transition: all 0.35s ease-in-out;
   width: 70%;
   table-layout: fixed;
@@ -119,6 +120,7 @@ body {
 
 /* Tooltip hidden by default */
 .tooltip {
+  font-family:"Wasted-Vindey";
   visibility: hidden;
   opacity: 0;
   position: absolute;
