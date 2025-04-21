@@ -173,10 +173,10 @@ td:hover .tooltip {
   flex-direction: column;
   align-items: center;
 }
-.info-area .heading{
+.info-area .heading {
   padding: 10px;
   margin: 0%;
   text-align: left;
   justify-content: center;
-    font-weight: bold;
+  font-weight: bold;
 }
