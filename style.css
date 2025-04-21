@@ -1,56 +1,141 @@
-.center{
-    text-align: center
-};
-
+@font-face {
+  font-family: "Wasted-Vindey";
+  src: url("./fonts/Wasted-Vindey.ttf") format("truetype");
+}
+.center {
+  text-align: center;
+  justify-content: center;
+}
 #table {
-    width: 100%; /* Increase the width to make the table larger */
-    border-radius: 14px;
-    margin:0 auto;
-    table-layout: fixed;
+  width: 70%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px auto;
+  justify-content: center;
+  text-align: center;
+
+  /* 🧊 Frosted glass look */
+  background: rgba(241, 215, 234, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* ✨ Rounded corners and soft borders */
+  border: 3px solid rgba(80, 79, 79, 0.4); /* soft grey border */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* subtle shadow */
+}
+#table:hover{
+    transform: scale(1.01);
+    transition: all 0.35s ease-in-out;
+}
+
+td:hover {
+  background-color:  rgb(252, 234, 251,0.5);
+  color: solid rgb(255, 255, 255); 
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.5s ease-in-out; /* Smooth animation */
+  /* box-shadow: 0 0 10px rgba(157, 156, 241, 0.8),
+  0 0 20px rgba(157, 156, 241, 0.5),
+  0 0 30px rgba(157, 156, 241, 0.3); */
+  transform: scale(1.1);
+  backdrop-filter: blur(100px);
+  border-radius: 5px;
+  position: relative;
+  z-index:1;
+
 
 }
-#table td:hover {
-    background-color: #e5edf3;         /* Light blue on hover */
-    color:rgb(157, 156, 241);                       /* White text */
-    cursor: pointer;                   /* Pointer cursor on hover */
-    transition: all 0.2s ease-in-out;  /* Smooth animation */
-    border-radius: 10px;               /* Rounded corners */
-  }
-  
-html,body{
-    background-image: linear-gradient(120deg,rgb(209, 240, 255),rgb(100, 192, 235),rgb(247, 209, 240));
-    height: 100%;
-}
-th,td{
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+th:hover {
+  background-color:  rgb(255, 255, 255,0.5);
+  color: solid rgb(255, 255, 255); 
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.5s ease-in-out; /* Smooth animation */
+  transform: scale(1.1);
+  /* box-shadow: 0 0 10px rgba(157, 156, 241, 0.8),
+  0 0 20px rgba(157, 156, 241, 0.5),
+  0 0 30px rgba(157, 156, 241, 0.3); */
+  border-radius: 5px;
+  position: relative;
+  backdrop-filter:blur(100px);
+ z-index:1;
 }
 
-th,td,table{
-    border: solid 1px black;
-    border-collapse: collapse;
+html,
+body {
+  background-image: linear-gradient(
+    120deg,
+    rgb(209, 240, 255),
+    rgb(100, 192, 235),
+    rgb(247, 209, 240)
+  );
+  height: 100%;
+}
 
+th,
+td {
+  font-size: larger;
+  padding: 20px;
+  text-align: center;
+  color: #5a3250;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid rgba(37, 36, 36, 0.2);
 }
 h1 {
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-   font-size: 80px;
-    background-color: rgb(166, 207, 241); /* White with 50% transparency */
+  font-family: "Wasted-Vindey";
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  font-size: 80px;
+  background-color: rgb(166, 207, 241);
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px auto;
 }
+h1:hover{
+    transform: scale(1.01);
+    transition: all 0.35s ease-in-out;
+   
+}
+
 body {
-    @font-face {
-        font-family: wast;
-        src: url(waste);
-    }
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height of the screen */
-    margin: 0;
+  font-family: Wasted-Vindey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the screen */
+  margin: 0;
 }
-  .container{
-    width:fit-content;
-    justify-content: center;
-    align-items: center;
-  }
+.container {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Tooltip hidden by default */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  top: -50px; /* Adjust based on direction */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 100;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Show tooltip on td:hover */
+td:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
