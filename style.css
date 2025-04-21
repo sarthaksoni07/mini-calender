@@ -15,7 +15,7 @@
   margin: 20px auto;
   justify-content: center;
   text-align: center;
-    
+
   /* 🧊 Frosted glass look */
   background: rgba(241, 215, 234, 0.15);
   backdrop-filter: blur(15px);
@@ -103,7 +103,7 @@ h1:hover {
 
 body {
   font-family: Wasted-Vindey;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full height of the screen */
@@ -143,4 +143,33 @@ td:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
+.info-area {
+  font-family: "Wasted-Vindey";
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 40px;
+  font-size: 1.5rem;
+  background-color: rgb(166, 207, 241, 0.5);
+  padding: 30px 40px;
+  margin: 20px auto;
+  width: 70%;
+  display: block;
+  text-align: left;
+  justify-content: center;
+  color: #5a3250;
+  transition: all 0.35s ease-in-out;
+  border: solid 0.5px rgba(90, 50, 80, 0.2);
+  min-height: 100px;
+  font-weight: bold;
+}
 
+.info-area:hover {
+  transform: scale(1.01);
+}
+
+/* Make sure everything stacks vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -60,4 +60,3 @@ You can easily modify this calendar by:
 </a>
 <div>
 Made with ❤️ and pure HTML/CSS.
-
