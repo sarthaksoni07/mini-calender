@@ -109,5 +109,24 @@
         </li>
       </ul>
     </div>
+    <script>
+      const table = document.getElementById("table");
+      // const cells = table.querySelectorAll("td");
+      const cells = table.querySelectorAll("td, th");
+    
+      cells.forEach(cell => {
+        cell.addEventListener("mouseenter", () => {
+          cells.forEach(c => {
+            if (c !== cell) c.classList.add("blurred");
+          });
+        });
+    
+        cell.addEventListener("mouseleave", () => {
+          cells.forEach(c => c.classList.remove("blurred"));
+        });
+      });
+
+    </script>
+    
   </body>
 </html>

@@ -38,9 +38,9 @@ td:hover {
   color: solid rgb(255, 255, 255);
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.3s ease-in-out; /* Smooth animation */
-  /* box-shadow: 0 0 10px rgba(157, 156, 241, 0.8),
-  0 0 20px rgba(157, 156, 241, 0.5),
-  0 0 30px rgba(157, 156, 241, 0.3); */
+  box-shadow: 0 0px 10px 1.5px rgba(0, 0, 0, 0.2);
+
+
   transform: scale(1.1);
   backdrop-filter: blur(100px);
   border-radius: 8px;
@@ -185,4 +185,12 @@ td:hover .tooltip {
   text-align: left;
   justify-content: center;
   font-weight: bold;
+}
+td.blurred {
+  filter: blur(1.5px);
+  transition: filter 0.3s ease-in-out;
+}
+th.blurred {
+  filter: blur(1.5px);
+  transition: filter 0.3s ease-in-out;
 }
