@@ -40,7 +40,6 @@ td:hover {
   transition: all 0.4s ease-in-out; /* Smooth animation */
   box-shadow: 0 0px 10px 1.5px rgba(0, 0, 0, 0.2);
 
-
   transform: scale(1.1);
   backdrop-filter: blur(100px);
   border-radius: 8px;
@@ -87,7 +86,6 @@ h1 {
   margin: 20px auto;
   transition: all 0.35s ease-in-out;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
 }
 h1:hover {
   transform: scale(1.04);
@@ -166,7 +164,6 @@ td:hover .tooltip {
   min-height: 100px;
   font-weight: bold;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
 }
 
 .info-area:hover {
