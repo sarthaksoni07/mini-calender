@@ -34,15 +34,15 @@
 }
 
 td:hover {
-  background-color: rgb(252, 234, 251, 0.5);
+  background-color: rgb(252, 234, 251, 0.3);
   /* background: transparent; */
   color: solid rgb(255, 255, 255);
   cursor: pointer; /* Pointer cursor on hover */
   transition: all 0.4s ease-in-out; /* Smooth animation */
-  box-shadow: 0 0px 5px 1.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 5px 1.5px rgba(0, 0, 0, 0.1);
 
   transform: scale(1.1);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(12px);
   border-radius: 8px;
   position: relative;
   z-index: 1;
